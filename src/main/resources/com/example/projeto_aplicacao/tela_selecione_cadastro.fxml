@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projeto_aplicacao.TelaSelecioneCadastroController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="216.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de usuário">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Line endX="-100.0" endY="206.0" layoutX="400.0" layoutY="113.0" startX="-100.0" />
+            <Button fx:id="btn_cadastro_professor" layoutX="109.0" layoutY="185.0" mnemonicParsing="false" onAction="#irParaCadastroProfessor" text="Sou professor" />
+            <Button fx:id="btn_cadastro_aluno" layoutX="411.0" layoutY="185.0" mnemonicParsing="false" onAction="#irParaCadastroAluno" text="Sou aluno" />
+            <Hyperlink fx:id="btn_ir_login" layoutX="214.0" layoutY="350.0" onAction="#funcaoMudarPagina" text="Já possui conta? Faça login" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

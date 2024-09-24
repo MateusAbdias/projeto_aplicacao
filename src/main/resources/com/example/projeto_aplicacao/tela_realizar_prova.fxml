@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projeto_aplicacao.TelaProvaControler">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="242.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realizar prova" wrappingWidth="115.47265625">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="txt_qt1" layoutX="38.0" layoutY="101.0" text="Questão 1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_qt1_altd" layoutX="38.0" layoutY="209.0" text="Alternativa" />
+            <Label fx:id="txt_qt1_alta" layoutX="38.0" layoutY="135.0" text="Alternativa" />
+            <Label fx:id="txt_qt1_altb" layoutX="38.0" layoutY="159.0" text="Alternativa" />
+            <Label fx:id="txt_qt1_altc" layoutX="38.0" layoutY="182.0" text="Alternativa" />
+            <Label fx:id="txt_qt2" layoutX="317.0" layoutY="100.0" text="Questão 2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_qt2_altd" layoutX="317.0" layoutY="208.0" text="Alternativa" />
+            <Label fx:id="txt_qt2_alta" layoutX="317.0" layoutY="134.0" text="Alternativa" />
+            <Label fx:id="txt_qt2_altb" layoutX="317.0" layoutY="158.0" text="Alternativa" />
+            <Label fx:id="txt_qt2_altc" layoutX="317.0" layoutY="181.0" text="Alternativa" />
+            <Text layoutX="35.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correta:" wrappingWidth="115.47265625">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="314.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correta:" wrappingWidth="115.47265625">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="btn_qt1C_a" layoutX="102.0" layoutY="244.0" mnemonicParsing="false" text="A" />
+            <Button fx:id="btn_qt1C_b" layoutX="138.0" layoutY="244.0" mnemonicParsing="false" text="B" />
+            <Button fx:id="btn_qt1C_c" layoutX="178.0" layoutY="244.0" mnemonicParsing="false" text="C" />
+            <Button fx:id="btn_qt1C_d" layoutX="217.0" layoutY="244.0" mnemonicParsing="false" onAction="#upProva" text="D" />
+            <Button fx:id="btn_qt2C_a" layoutX="389.0" layoutY="240.0" mnemonicParsing="false" text="A" />
+            <Button fx:id="btn_qt2C_b" layoutX="425.0" layoutY="240.0" mnemonicParsing="false" text="B" />
+            <Button fx:id="btn_qt2C_c" layoutX="465.0" layoutY="240.0" mnemonicParsing="false" text="C" />
+            <Button fx:id="btn_qt2C_d" layoutX="504.0" layoutY="240.0" mnemonicParsing="false" text="D" />
+            <Button fx:id="btn_finalizar" layoutX="274.0" layoutY="333.0" mnemonicParsing="false" onAction="#funcSair" text="Finalizar" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

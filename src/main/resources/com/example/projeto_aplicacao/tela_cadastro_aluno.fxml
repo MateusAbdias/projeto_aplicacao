@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projeto_aplicacao.TelaCadastroAlunoControler">
+   <center>
+      <AnchorPane prefHeight="408.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink fx:id="btnVoltar" layoutX="6.0" layoutY="3.0" onAction="#voltar" text="&lt;voltar" />
+            <Text layoutX="213.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de aluno">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="53.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+            <Text layoutX="53.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF" />
+            <Text layoutX="53.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+            <Text layoutX="53.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" />
+            <Text fx:id="inputMatricula" layoutX="35.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricula" />
+            <Button fx:id="btnCadastrar" layoutX="237.0" layoutY="333.0" mnemonicParsing="false" onAction="#onBtnEntrar" text="Cadastrar aluno">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+            </Button>
+            <Text layoutX="278.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periodo" />
+            <TextField layoutX="106.0" layoutY="282.0" prefWidth="149.0" promptText="digite a matricula" />
+            <TextField fx:id="inputPeriodo" layoutX="340.0" layoutY="282.0" prefHeight="25.0" prefWidth="171.0" promptText="digite o período" />
+            <TextField fx:id="inputNome" layoutX="106.0" layoutY="117.0" prefHeight="25.0" prefWidth="406.0" promptText="digite o nome" />
+            <TextField fx:id="inputCPF" layoutX="106.0" layoutY="157.0" prefHeight="25.0" prefWidth="406.0" promptText="digite o CPF" />
+            <TextField fx:id="inputEmail" layoutX="106.0" layoutY="200.0" prefHeight="25.0" prefWidth="406.0" promptText="digite o email" />
+            <TextField fx:id="inputSenha" layoutX="106.0" layoutY="243.0" prefHeight="25.0" prefWidth="406.0" promptText="digite a senha" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
